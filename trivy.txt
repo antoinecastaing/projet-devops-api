@@ -1,0 +1,33 @@
+multistage (alpine 3.18.3)
+
+Total: 4 (UNKNOWN: 0, LOW: 0, MEDIUM: 2, HIGH: 2, CRITICAL: 0)
+
+┌────────────┬───────────────┬──────────┬────────┬───────────────────┬───────────────┬────────────────────────────────────────────────────────┐
+│  Library   │ Vulnerability │ Severity │ Status │ Installed Version │ Fixed Version │                         Title                          │
+├────────────┼───────────────┼──────────┼────────┼───────────────────┼───────────────┼────────────────────────────────────────────────────────┤
+│ libcrypto3 │ CVE-2023-5363 │ HIGH     │ fixed  │ 3.1.2-r0          │ 3.1.4-r0      │ openssl: Incorrect cipher key and IV length processing │
+│            │               │          │        │                   │               │ https://avd.aquasec.com/nvd/cve-2023-5363              │
+│            ├───────────────┼──────────┤        │                   ├───────────────┼────────────────────────────────────────────────────────┤
+│            │ CVE-2023-5678 │ MEDIUM   │        │                   │ 3.1.4-r1      │ openssl: Generating excessively long X9.42 DH keys or  │
+│            │               │          │        │                   │               │ checking excessively long X9.42...                     │
+│            │               │          │        │                   │               │ https://avd.aquasec.com/nvd/cve-2023-5678              │
+├────────────┼───────────────┼──────────┤        │                   ├───────────────┼────────────────────────────────────────────────────────┤
+│ libssl3    │ CVE-2023-5363 │ HIGH     │        │                   │ 3.1.4-r0      │ openssl: Incorrect cipher key and IV length processing │
+│            │               │          │        │                   │               │ https://avd.aquasec.com/nvd/cve-2023-5363              │
+│            ├───────────────┼──────────┤        │                   ├───────────────┼────────────────────────────────────────────────────────┤
+│            │ CVE-2023-5678 │ MEDIUM   │        │                   │ 3.1.4-r1      │ openssl: Generating excessively long X9.42 DH keys or  │
+│            │               │          │        │                   │               │ checking excessively long X9.42...                     │
+│            │               │          │        │                   │               │ https://avd.aquasec.com/nvd/cve-2023-5678              │
+└────────────┴───────────────┴──────────┴────────┴───────────────────┴───────────────┴────────────────────────────────────────────────────────┘
+2023-11-27T16:18:35.115+0100    INFO    Table result includes only package filenames. Use '--format json' option to get the full path to the package file.
+
+Node.js (node-pkg)
+
+Total: 1 (UNKNOWN: 0, LOW: 0, MEDIUM: 1, HIGH: 0, CRITICAL: 0)
+
+┌───────────────────────┬────────────────┬──────────┬────────┬───────────────────┬─────────────────────┬─────────────────────────────────────────────────────┐
+│        Library        │ Vulnerability  │ Severity │ Status │ Installed Version │    Fixed Version    │                        Title                        │
+├───────────────────────┼────────────────┼──────────┼────────┼───────────────────┼─────────────────────┼─────────────────────────────────────────────────────┤
+│ semver (package.json) │ CVE-2022-25883 │ MEDIUM   │ fixed  │ 7.3.7             │ 7.5.2, 6.3.1, 5.7.2 │ nodejs-semver: Regular expression denial of service │
+│                       │                │          │        │                   │                     │ https://avd.aquasec.com/nvd/cve-2022-25883          │
+└───────────────────────┴────────────────┴──────────┴────────┴───────────────────┴─────────────────────┴─────────────────────────────────────────────────────┘
